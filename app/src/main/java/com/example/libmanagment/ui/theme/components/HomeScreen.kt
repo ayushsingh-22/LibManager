@@ -8,7 +8,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -38,7 +37,7 @@ fun HomeScreen(
 ) {
     val books by viewModel.books.collectAsState()
     val searchQuery by viewModel.searchQuery.collectAsState()
-    val scrollState = rememberLazyListState()
+    //val scrollState = rememberLazyListState()
 
     Scaffold(
         topBar = {
