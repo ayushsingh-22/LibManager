@@ -1,29 +1,32 @@
-# 📚 Library Book Management App
+# 📚 Library Book Management Application
 
-A modern Android application built with **Kotlin**, **Jetpack Compose**, and **Room Database** that allows users to manage a personal library of books. The app is designed using the **MVVM architecture**, offering features like adding, editing, deleting, searching, and swiping books from a persistent list.
+This is a contemporary Android application developed using **Kotlin**, **Jetpack Compose**, and **Room Database**. The app enables users to efficiently manage a personal library by adding, editing, deleting, and searching books. It is architected using the **MVVM pattern**, providing a smooth and responsive user experience with persistent data storage.
 
 ---
 
 ## 🛠️ Features
 
-- ✅ Add new books with title, author, and availability status
-- ✅ View a scrollable list of all added books
-- ✅ Edit existing book details
-- ✅ Swipe-to-delete books (with animation)
-- ✅ Search/filter books by title or author
-- ✅ Navigation between Home and Add/Edit screens
-- ✅ Modern UI using Material 3 and Jetpack Compose
-- ✅ Offline persistence with Room database
+- Add new books with details including title, author, and availability status.
+- Browse a scrollable list displaying all stored books.
+- Modify existing book information.
+- Swipe-to-delete functionality accompanied by smooth animations.
+- Search and filter books by title or author.
+- Navigate seamlessly between Home and Add/Edit screens.
+- Modern user interface designed with Material 3 components in Jetpack Compose.
+- Offline data persistence utilizing Room database.
 
 ---
 
 ## 📸 Screenshots
 
-<img width="1080" height="2392" alt="Screenshot_20250724-165635" src="https://github.com/user-attachments/assets/a37069f4-7d1c-499e-9e1d-04103f272cc8" />
-<img width="1080" height="2392" alt="Screenshot_20250724-165657" src="https://github.com/user-attachments/assets/87e15795-1c74-46fa-be03-30808f7760cb" />
-<img width="1080" height="2392" alt="Screenshot_20250724-165650" src="https://github.com/user-attachments/assets/53fb8fab-cb28-4fca-9fb1-081cc592e6cd" />
-<img width="1080" height="2392" alt="Screenshot_20250724-165709" src="https://github.com/user-attachments/assets/7cc7ab2e-6ae1-485c-b613-f3929f7e33ba" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a37069f4-7d1c-499e-9e1d-04103f272cc8" width="250" alt="Screenshot 1" />
+  <img src="https://github.com/user-attachments/assets/87e15795-1c74-46fa-be03-30808f7760cb" width="250" alt="Screenshot 2" />
+  <img src="https://github.com/user-attachments/assets/53fb8fab-cb28-4fca-9fb1-081cc592e6cd" width="250" alt="Screenshot 3" />
+  <img src="https://github.com/user-attachments/assets/7cc7ab2e-6ae1-485c-b613-f3929f7e33ba" width="250" alt="Screenshot 4" />
+</p>
 
+---
 
 ## 📂 Project Structure
 
@@ -31,12 +34,12 @@ A modern Android application built with **Kotlin**, **Jetpack Compose**, and **R
 
 com.example.libmanagment/
 ├── data/
-│   ├── Book.kt               // Entity
-│   ├── BookDao.kt            // DAO
-│   └── BookDatabase.kt       // Room DB
+│   ├── Book.kt               // Entity class representing a Book
+│   ├── BookDao.kt            // Data Access Object for database operations
+│   └── BookDatabase.kt       // Room database configuration
 │
 ├── repository/
-│   └── BookRepository.kt     // Repository
+│   └── BookRepository.kt     // Repository handling data operations
 │
 ├── ui/
 │   └── theme/
@@ -48,32 +51,33 @@ com.example.libmanagment/
 │       │   ├── HomeScreen.kt
 │       │   └── AddEditScreen.kt
 │
-├── LibraryViewModel.kt       // ViewModel
-├── MainActivity.kt           // Entry point
-└── Screen.kt                 // Navigation routes
+├── LibraryViewModel.kt       // ViewModel managing UI-related data
+├── MainActivity.kt           // Application entry point
+└── Screen.kt                 // Navigation routes definition
 
 ````
 
 ---
 
-## 🧠 Tech Stack
+## 🧠 Technology Stack
 
-- **Language**: Kotlin
-- **UI Framework**: Jetpack Compose (Material 3)
-- **Architecture**: MVVM
-- **Database**: Room (SQLite)
-- **Navigation**: Jetpack Navigation Compose
-- **State Management**: StateFlow + ViewModel
+- **Programming Language:** Kotlin  
+- **UI Framework:** Jetpack Compose (Material 3)  
+- **Architecture Pattern:** MVVM (Model-View-ViewModel)  
+- **Database:** Room (SQLite)  
+- **Navigation:** Jetpack Navigation Compose  
+- **State Management:** StateFlow with ViewModel  
 
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Android Studio Giraffe or later
-- Kotlin 1.9+
-- Gradle 8.0+
-- Android SDK 33+
+
+- Android Studio (Giraffe version or later)  
+- Kotlin 1.9 or higher  
+- Gradle 8.0 or higher  
+- Android SDK version 33 or higher  
 
 ### Clone the Repository
 
@@ -82,21 +86,21 @@ git clone https://github.com/your-username/LibraryBookManager.git
 cd LibraryBookManager
 ````
 
-### Run the App
+### Running the Application
 
-1. Open project in **Android Studio**
-2. Let Gradle sync
-3. Run on emulator or physical device
+1. Open the project in **Android Studio**.
+2. Allow Gradle to synchronize the project dependencies.
+3. Execute the app on an Android emulator or a physical device.
 
 ---
 
-## 📌 TODO / Future Improvements
+## 📌 Planned Enhancements
 
-* 🔄 Undo delete with Snackbar
-* 🌙 Dark mode support
-* ✅ Form validation
-* ☁️ Firebase sync / cloud backup
-* 🧪 Unit tests & UI tests
+* Implement Undo functionality for delete actions using Snackbar.
+* Add support for Dark Mode to enhance usability in low-light conditions.
+* Incorporate comprehensive form validation to improve data integrity.
+* Enable cloud synchronization and backup via Firebase.
+* Develop unit and UI tests to ensure application reliability.
 
 ---
 
@@ -104,7 +108,6 @@ cd LibraryBookManager
 
 **Ayush Kumar**
 📧 [ayushkumar2205@gmail.com](mailto:ayushkumar2205@gmail.com)
-🔗 [LinkedIn](https://linkedin.com/in/ayush-kumar-a2880a258)
-💻 [GitHub](https://github.com/ayushsingh-22)
+🔗 [LinkedIn Profile](https://linkedin.com/in/ayush-kumar-a2880a258)
+💻 [GitHub Profile](https://github.com/ayushsingh-22)
 
----
